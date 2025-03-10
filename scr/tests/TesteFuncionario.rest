@@ -1,0 +1,14 @@
+### Verbo POST - adicionar
+
+POST http://127.0.0.1:8000/funcionario/ HTTP/1.1
+content-type: application/json
+
+{
+    "nome" : "Julio",
+    "matricula" : "1u12353",
+    "cpf" : "1",
+    "telefone" : "tel324",
+    "grupo" : 1,
+    "senha": "ee29eb4a8725678278ac439cf7abfd2a849cdc7378a6"
+}
+    
