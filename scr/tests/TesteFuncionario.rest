@@ -6,7 +6,7 @@ content-type: application/json
 {
     "nome" : "Julio",
     "matricula" : "1u12353",
-    "cpf" : "1",
+    "cpf" : "2",
     "telefone" : "tel324",
     "grupo" : 1,
     "senha": "ee29eb4a8725678278ac439cf7abfd2a849cdc7378a6"
