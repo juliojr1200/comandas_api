@@ -8,7 +8,6 @@ dotenv_file = find_dotenv()
 load_dotenv(dotenv_file)
 
 # Configurações da API
-
 HOST = os.getenv("HOST")
 PORT = os.getenv("PORT")
 RELOAD = os.getenv("RELOAD")
@@ -33,3 +32,8 @@ elif DB_SGDB == 'mssql': # SQL Server
     STR_DATABASE = f"mssql+pymssql://{DB_USER}:{DB_PASS}@{DB_HOST}/{DB_NAME}?charset=utf8"
 else: # SQLite
     STR_DATABASE = f"sqlite:///apiDatabase.db"
+
+# Configurações Segurança da API
+SECRET_KEY = os.getenv("SECRET_KEY")
+ALGORITHM = os.getenv("ALGORITHM")
+ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES"))

@@ -1,0 +1,9 @@
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmMiLCJleHAiOjE3NDIyNzA4NzF9.uwrFPzR_reIERmiRqHL6F0sg9FRjyjjWxp7BTx1KY4o
+
+PUT http://127.0.0.1:8000/produto/1 HTTP/1.1
+Authorization: Bearer {{token}}
+content-type: application/json
+
+{
+    "nome_produto": "Hambúrguer Clássico x"
+}
