@@ -1,0 +1,17 @@
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmMiLCJleHAiOjE3NDIyNzA4NzF9.uwrFPzR_reIERmiRqHL6F0sg9FRjyjjWxp7BTx1KY4o
+
+### Verbo POST - adicionar
+
+POST http://127.0.0.1:8000/funcionario/ HTTP/1.1
+Authorization: Bearer {{token}}
+content-type: application/json
+
+{
+    "nome" : "Zé das Batatas",
+    "matricula" : "1u12356",
+    "cpf" : "3",
+    "telefone" : "tel324",
+    "grupo" : 1,
+    "senha": "ee29eb4a8725678278ac439cf7abfd2a849cdc7378a8"
+}
+    
